@@ -1,0 +1,317 @@
+								SQL(Structured Query language)
+DDL:
+	Data definiton language that can be used to defining ,altering,deleting, database structres such as table, index, schema.
+
+	*Create
+	*Drop
+	*Alter
+	*Truncate
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------DQL:
+	Data query language used for performing queries on data within a schema object.
+	
+	*Select
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DML:
+	Data manipulation language. DML deals with the manipulation of data present in the database.It will disturb the structre of the table.
+
+	*Insert
+	*Update
+	*Delete
+	*Call
+	*Explain Call
+	*Lock
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DCL:
+	Data control Language. It includes grant and revoke these commands contol access to data in the database It provide contol acces to db by granting or revoking permission 	
+	*Grant
+	*Revoke
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TCL:
+	Transaction control language. it is a set of task into a single selection unit. Transaction has two results success or failure.
+
+	*Commit
+	*Savepoint
+	*Rollback
+	*Set transaction
+	*Set Constraint
+
+Row represent Record and Coloumn represents feild or particular area.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PRIMARY KEY :
+
+	Primary key is a coloumn or a group of coloumn in a database and it is used to identify each individual record in a table.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ALTER :
+ 	Alter table is used to add, delete or modified coloumn in an existing table. note: Alter table is also used to add and drop various constraints on an existing table
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Constraints :
+	Constraints are Conditions are restriction that are applied to the database to check data before it is inserted 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7 Constraints in SQL:
+
+	*Not Null
+	*Unique
+	*Primary key
+	*Foreign key
+	*Check
+	*default
+	*Create index
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Aggregate Function :
+	
+	Aggregate function is a function that performs the calculation on a set of values and returns a single value. Aggregate function often used with group by class along with  select statement
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is 
+Delete:
+	Delete is used to delete existing record in the table 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Where:
+	Where class is used to specify the records that should be deleted.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Delete all records:
+	Delete all the row in a table without deleting the table structure,attributes and indexes.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Drop table:
+	Drop table is used to drop an existing database in a table
+
+	NOTE*:it will drop a complete information stored in a table.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Truncate :
+	Truncate is used to delete a data inside a table but not the table itself
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In operator:
+	Allow to specify multiple values in a var class.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Not IN:
+	Allows that are not located in the specific conditions
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Between :
+	Selects values within a given range. the values can be numbers, date or text(using funcition).
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Null values
+	A field with null values or a field with no Values
+	NOTE:* We have to use isNull or Isnotnull operator  
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A wild card:
+	A wild card character is used to substitute one or more character in a string.
+	%- represent zero or more character
+	_ - represent single character  
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SQL constraints are used to specify rules for a data in a table
+
+NOT NULL- Ensures that the the column connot have a null values
+
+Primary Key : A comibination of not null and unique key
+	Uniquely identifies row in a table
+
+UNIQUE KEY :
+	Ensures that all values in the column are different
+
+Foreign key:
+	Prevents action that would destroy link between tables. 
+
+Default:
+		
+	Set a default value of coulmn if no value is specified.
+
+Create index:
+	
+	Used to create and retrieve data from the database very quickly
+
+Check:
+	it is used to ensure that the values in a column satisfies the condition 
+
+Join (Clause -- condition):
+
+	join clause is used to combine rows from two or more tables based on related or common column between them.
+
+On (clause):
+
+	on clause is used to apply condition based on constraints basically primary key,foreign key, unique key, default, create index, check, not null.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Inner Join:
+
+ 	returns record that have matching value in both table 
+
+Left Join:
+
+	Left join returns all the record from the left table and the matching record from the right table.
+
+Right join :
+	
+	 Right join returns all the record from the right table and matching record from the left table.
+
+Full join:
+	
+	full join which combines the result of both left and right join. NOTE:* If a record in one table does not have the matching record in another table the result will included the record with null value in those places.
+
+cross joins:
+
+	Cross joins returns all the matching record from both the table wether the other table matches or not. cross join also known as cartesian join.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Store procedure:
+
+	Store procedure is used to use the code over and over again. You can also pass parameters to the store procedures and execute the same.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+delimitier in store procedure:
+
+	Delimiter are used when we need to define the store procedure as well as to create triggers.
+
+USE OF DELIMITIER:
+	* A delimitier is a sequence of one or more character to specify the boundry between the data.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+Procedure without parameter:
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+What types of results can Mysql subqueries?
+
+Subqueries can return:
+	
+	*Scalar(A single value)
+	*Row(a single row of data)
+	*Column(a single column of data)
+	*table
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What are the types of Mysql subqueries?
+
+subqueries can be classified into several types:
+
+	*scalar subqueries
+	*row subqueries
+	*column subqueries
+	*table subqueries
+	*correlated subqueries
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Group by?
+
+Group by class combines similiar row producing a single result row for each group of row that haves the same values.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Having ?
+
+Having filters the group created by the group by class based on conditions.
+	NOTE*:Having is used because where can't be used with aggregate function.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Normalization:
+
+	Normalization is a process of organizing data into tables and column to ensure that data is consitant and easy to manage.
+
+Different levels of normalization
+
+First Normal Form  (1NF) : Ensures that each column contains a single value and each row is unique. 
+Second Normal Form (2NF) : Ensures that all non-key attributes are fully dependent on a primary key. 
+Third Normal Form  (3NF) : 
+Fourth Normal Form (4NF) : Eliminates multi-valued dependencies, where one or more attributes depend on part of the primary key. 
+Fifth Normal Form  (5NF) : Isolates semantically related multiple relationships to remove redundancy.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+RollBack:
+Rollback is a TCL(Transaction Control Language) in SQL. IF you wish to undo any changes or alterations that are not save yet in the database 
+
+(It is used to undo changes made to the database or application or table)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Commit:
+Commit means a changes made in the currently are permanent
+Commit is FASTER because it saves the changes without un doing the previous operations.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+									    JDBC
+
+JDBC is a java API that facilitates databases connectivity allowing java application to execute SQL queries and intreact with Databases. It is used to retrive results include driver, result set, Row set, Prepared Statement and connection.
+
+2-tier : in java application communicates directly with the database using JDBC driver. [ Client(or)server--->JDBC---->Database]
+3-tier : User queries are send to middle tier services which interacts with the database then the result or process by the middle tier then send back to the user. 
+[ Client---> Application Server----> JDBC server ----->Database]
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4 Components of JDBC:
+	
+	* JDBC API
+	* JDBC driver manager(Driver manager is responsible for loading the correct database specific driver to establish the correct  
+	* JDBC TEST Suite(to perform CRUD operations
+	* JDBC Driver
+		1.JDBC-ODBC(bridge driver)
+		2.Native-API(partially driver)
+		3.Network Protocol driver(fully java driver) 
+		4.Thin Driver(fully java driver)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The Statement interface in JDBC (Java Database Connectivity) is used to create and execute SQL queries in Java applications. JDBC provides three types of statements to interact with the database:
+		
+		• Statement
+		• Prepared Statement
+		• Callable Statement
+
+1. Statement
+	A Statement object is used for general-purpose access to databases and is useful for executing static SQL statements at runtime.
+
+Syntax:
+
+Statement statement = connection.createStatement();
+Implementation: Once the Statement object is created, there are three ways to execute it.
+•	execute(String SQL): It is used to executes any SQL statements (like SELECT, INSERT, UPDATE or DELETE). If the ResultSet object is retrieved, then it returns true 	else false is returned.
+•	executeUpdate(String SQL): It is used to executes SQL statements (like INSERT, UPDATE or DELETE). It returns the number of rows affected by the SQL statement.
+•	ResultSet executeQuery(String SQL): It is used to executes the SELECT query. It returns a ResultSet object that contains the data retrieved by the query.
+
+2. Prepared Statement
+	A PreparedStatement represents a precompiled SQL statement that can be executed multiple times. It accepts parameterized SQL queries, with ? as placeholders for parameters, which can be set dynamically.
+Implementation: Once the PreparedStatement object is created, there are three ways to execute it: 
+	• execute(): This returns a boolean value and executes a static SQL statement that is present in the prepared statement object.
+	• executeQuery(): This returns a ResultSet from the current prepared statement.
+	• executeUpdate(): This returns the number of rows affected by the DML statements such as INSERT, DELETE, and more that is present in the current Prepared 				   Statement
+
+
+3. Callable Statement
+	A CallableStatement is used to execute stored procedures in the database. Stored procedures are precompiled SQL statements that can be called with parameters. They are useful for executing complex operations that involve multiple SQL statements.
+
+Syntax:
+
+CallableStatement cstmt = con.prepareCall(“{call ProcedureName(?, ?)}”);
+•	{call ProcedureName(?, ?)}: Calls a stored procedure named ProcedureName with placeholders ? for input parameters.
+
+Methods to Execute:
+•	execute(): Executes the stored procedure and returns a boolean indicating whether the result is a ResultSet (true) or an update count (false).
+•	executeQuery(): Executes a stored procedure that returns a ResultSet.
+•	executeUpdate(): Executes a stored procedure that performs an update and returns the number of rows affected.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SERVLET----------------------------------------
+
+	Servlet is the small java program that runs within a web server
+
+USES OF JAVA SERVICE :-------------------------------------------------------------------------------------------------------------------
+
+	recieve and respond to the request from webclient useally across http
+TYPES OF HTTP REQUEST:--------------------------------------------------------------------------------------------------------------------
+
+	* Get (Getting the input from the webserver)
+	* Post()
+	* Opinions
+	* Delete()
+	* Put
+	* Trace
+
+JSP-------------------------------------------------------------------------------------------------------------------------------------
+
+	JSP is the surver side technology that creater server side application that embeds java code directly into html or xml
+
+
+
+
