@@ -1,0 +1,343 @@
+CLASS AND OBEJET
+
+
+OBJECT----------------------
+
+THE TEMPLATE ON BLUE PRINT THE DEFINES THE METHOD AND VARIABLE FOR A SPECIFIC TYPE OF OBJECT
+
+an instance of a class that contain the real values insted of variable
+object have behaviour and state
+
+
+
+	new
+	new instance
+        object cloning
+
+
+	INTENCE VARIABLE-------------------
+
+
+instence variable are accessible to the entire class.they are created and destroyed along with the object.
+
+These variable or declear the class for outside the method always get a default variable
+
+
+STATIC VARIABLES-----------------------------
+
+Static variable is a variable contains the single copy of the variable and shade amoung
+all object static variable are global variables 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+COLLECTIONS FRAMEWORK------------------------------------------
+
+
+	The collection framework contain interfaces,classes,itrartors to implements
+various datastructure and algorithums
+
+
+ARRAY LIST-----------------------------------------------------
+
+
+	Array list is the part of collection framework and it provides in DYNAMIC ARRAY IN JVA
+	
+	It is slower then standard array
+
+ADVANTAGES OF ARRAY LIST-----------------------------------------
+ 
+	=>>No need to mention the size when crating array list
+	=>>It automatically adjust its capacity as elment are added are removed.
+	=>>Array list allows randomly accese the list.
+	=>>cannot be used for primitive datatype like int,char,ect....In such case we need wrapper class.
+	=>>Array list is not synchronized.
+	=>>Array list allows duplicate values. List allows duplicate but it mantain the oder of the subject (odered collection)
+
+WHEN ARRAYLIST CAN REMOVE DUPLICATE
+
+	=>>Create a linked hashset from this array list it will remove the duplicate
+	=>>Convert this hashset back to array list.
+	=>>The second arraylist contains the element with duplicate removed.
+
+
+---------------------------------
+
+
+	LIST
+	
+	INTERFACE
+
+	MAPS`		
+
+
+LINKEDLIST 
+
+IMPLEMENTS
+
+LINKEDLIST DATASTRUCTURE------------------------------------------------------------------------------------------------------
+
+WHRE THE ELEMENT ARE NOT SORTED IN COTIGIOUS LOCATION
+EVERY ELEMTS IS A SEPARATE
+THE ELEMTS ARE LINKED USING POINTER AND ADDRESS, AND EACH ELEMENTS ARE NOTE
+
+DISADVANNTAGES------------------------------------------------------------------------------------------------------------------
+	
+	node cannot be accesed directly instead we Need to start from the head and follow through the link to reach the node
+	it cannot be stored contigious.
+	
+
+
+//Vector implements global implements of objects
+//It grow or shrinks based on its size
+//vector is synchronize
+-----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------STACK -------------------------------------------------------------------------------
+
+//Stack work on the principle of last in first out in addition with push and pop option
+//Operations--------------------
+ 
+	+>>PUSH (pushing the element on the top of the stack)
+	=>>POP (To remove the element on the top of the stack)
+	=>>PEAK (Display element on the top of the stack)
+	=>>EMPTY (if returns true if nothing is on the top of the stack else return false)
+	=>>SEARCH (Searching the element in the stack)
+------------------------------HASH MAP---------------------------------------------------------------------------------------------
+Map is a class used to implements the framework that stors the data in key-value pairs that allows for 
+efficient retrive
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+COLLECTIONS FRAMEWORK------------------------------------------
+
+
+	The collection framework contain interfaces,classes,itrartors to implements
+various datastructure and algorithums
+
+
+ARRAY LIST-----------------------------------------------------
+
+
+	Array list is the part of collection framework and it provides in DYNAMIC ARRAY IN JVA
+	
+	It is slower then standard array
+
+ADVANTAGES OF ARRAY LIST-----------------------------------------
+ 
+	=>>No need to mention the size when crating array list
+	=>>It automatically adjust its capacity as elment are added are removed.
+	=>>Array list allows randomly accese the list.
+	=>>cannot be used for primitive datatype like int,char,ect....In such case we need wrapper class.
+	=>>Array list is not synchronized.
+	=>>Array list allows duplicate values. List allows duplicate but it mantain the oder of the subject (odered collection)
+
+WHEN ARRAYLIST CAN REMOVE DUPLICATE
+
+	=>>Create a linked hashset from this array list it will remove the duplicate
+	=>>Convert this hashset back to array list.
+	=>>The second arraylist contains the element with duplicate removed.
+
+
+---------------------------------
+
+
+	LIST
+	
+	INTERFACE
+
+	MAPS`		
+
+
+LINKEDLIST 
+
+IMPLEMENTS
+
+LINKEDLIST DATASTRUCTURE------------------------------------------------------------------------------------------------------
+
+WHRE THE ELEMENT ARE NOT SORTED IN COTIGIOUS LOCATION
+EVERY ELEMTS IS A SEPARATE
+THE ELEMTS ARE LINKED USING POINTER AND ADDRESS, AND EACH ELEMENTS ARE NOTE
+
+DISADVANNTAGES------------------------------------------------------------------------------------------------------------------
+	
+	node cannot be accesed directly instead we Need to start from the head and follow through the link to reach the node
+	it cannot be stored contigious.
+	
+
+
+//Vector implements global implements of objects
+//It grow or shrinks based on its size
+//vector is synchronize
+-----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------STACK -------------------------------------------------------------------------------
+
+//Stack work on the principle of last in first out in addition with push and pop option
+//Operations--------------------
+ 
+	+>>PUSH (pushing the element on the top of the stack)
+	=>>POP (To remove the element on the top of the stack)
+	=>>PEAK (Display element on the top of the stack)
+	=>>EMPTY (if returns true if nothing is on the top of the stack else return false)
+	=>>SEARCH (Searching the element in the stack)
+------------------------------HASH MAP---------------------------------------------------------------------------------------------
+Map is a class used to implements the framework that stors the data in key-value pairs that allows for 
+efficient retrive
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Module-2(Defintion)
+===================
+What is Object?
+An object is a entity which has its own states and behaviour.
+state refers to variables/datamembers and behaviour refers to
+methods/memberfunction.
+
+
+What is class?
+A class is a java definition block or a java blueprint which
+contains states and behaviour.
+state refers to variables/datamembers and behaviour refers to
+methods/memberfunction.
+
+
+What is reference variable?
+It is an identifier which is used to refer to the object that is present
+in the heap memory.
+
+
+What is constructor?
+A constructor is a special method or a special memberfunction
+of the class which will have the same name as that of the class
+name.	
+
+
+
+Why do we use constructor?
+Constructors are used to initialize the non-static variables that
+are present inside the object.
+
+
+What is Constructor calling?
+The process of calling one constructor from another constructor within the same class is known as Constructor calling.
+we used "this()" for performing Constructor calling 
+
+
+What is Constructor chaining?
+The process of calling super class constructor from sub class constructor is known as Constructor chaining.
+we used "super()" for performing Constructor chaining
+
+
+What is Inheritance?
+One class aquiring the properties of another class is known as 
+Inheritance.
+It is also known as IS-A relationship.
+we use "extends" keyword to perform inheritance.
+
+
+What is method overloading?
+The process of writing multiple methods within the same class 
+which are having same name but different in their arguments is known as
+method overloading.
+Example:
+---------
+Amazon payment module
+IRCTC train search module
+
+
+What is method overriding?
+The Process of Changing super class method implementation in the subclass is known
+as Method Overriding.
+is-a relationship is mandatory to perform overriding.
+While Overriding method name and arguments must be same.
+Example:
+--------
+Upgrade a existing feature
+update a existing feature
+
+
+What is Polymorphism?
+One Object showing different behaviour in different stages of its life 
+is known as Polymorphism.
+types:
+Compile time polymorphism
+Run time polymorphism
+
+
+What is Encapsulation?
+The Process of Binding related data together is known as Encapsulation.
+eg:
+---
+A class is an encapsulation of datamembers and memberfunction
+A package is a encapsulation of class and interface
+A rt.jar file is a encapsulation of java executable files
+
+
+What is abstract class?
+A class which is declared using "abstract" keyword is known as abstract
+class.
+if a class contains atleast one abstract method then it is mandatory to
+decalare the class as abstract.
+
+
+What is Interface?
+A interface is a java definition block or a java blueprint which
+contains states and behaviour.
+state refers to variables/datamembers and behaviour refers to
+methods/memberfunction.
+every variable is by default static and final
+every method is by default public and abstract
+
+
+What is Abstraction?
+The process of hiding the implementation and giving only the functionality
+to the user is known as Abstraction.
+In java Abstraction can be achieved in 2 ways,
+using Abstract class
+using Interface
+
+
+What is typecasting?
+The process of converting one type of information to another type of 
+information is known as typecasting.
+types:
+-------
+Data typecasting
+class typecasting
+
+
+What is data typecasting?
+The process of converting one primitive type data to another primitive type
+is known as data typecasting
+
+
+What is class typecasting?
+The process of converting one class type information to another 
+class type is known as class typecasting.
+to perform class typecasting IS-A relationship is mandatory.
+types:
+------
+Upcasting 
+Downcasting
+
+
+What is upcasting?
+The process of converting subclass type information to superclass type
+is know as upcasting.
+(or)
+Assigning subclass object to superclass reference variable is known as 
+upcasting.
+
+
+What is downcasting?
+The process of converting superclass type information to subclass type
+is know as downcasting.
+(or)
+Assigning superclass object to subclass reference variable is known as 
+downcasting.
+
+When do we get ClassCastException?
+Whenever we try to perform downcasting without doing upcasting we will end up getting ClassCastException.
+
+
+Why multiple inheritance is not allowed in java?
+As per java rule when ever we create subclass object its super class constructor must be called inorder
+to complete the constructor chaining process.
+Since in mutiple inheritance one subclass will have more than one superclass , when we create object of the subclass
+the jvm will get confuse which superclass constructor it should execute first to complete the constrcutor chaining.
+To avoid this confusion multiple inheritance is not allowed in java.
